@@ -1,5 +1,8 @@
 var process = require('child_process');
 
+//  获取版本
+var newVersion = require('./package.json').version;
+
 //  子进程完成后的回调
 function cb(error, stdout, stderr) {
   console.log(stdout);
